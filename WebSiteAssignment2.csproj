@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\CaravanPalace.jpg" />
+    <None Include="wwwroot\Images\CG5.jpg" />
+    <None Include="wwwroot\Images\CK9C.jpg" />
+    <None Include="wwwroot\Images\DAGames.jpg" />
+    <None Include="wwwroot\Images\Dan_Bull.jpg" />
+    <None Include="wwwroot\Images\FallOutBoy.jpg" />
+    <None Include="wwwroot\Images\Gorillaz.jpg" />
+    <None Include="wwwroot\Images\HughLaurie.jpg" />
+    <None Include="wwwroot\Images\ImagineDragons.jpg" />
+    <None Include="wwwroot\Images\img_la.jpg" />
+    <None Include="wwwroot\Images\img_ny.jpg" />
+    <None Include="wwwroot\Images\img_wash.jpg" />
+    <None Include="wwwroot\Images\JT.png" />
+    <None Include="wwwroot\Images\JTandPAT.jpg" />
+    <None Include="wwwroot\Images\MysterySkulls.jpg" />
+    <None Include="wwwroot\Images\OR3O.jpg" />
+    <None Include="wwwroot\Images\PAT.jpg" />
+    <None Include="wwwroot\Images\PATD.jpg" />
+    <None Include="wwwroot\Images\PostMalone.jpg" />
+    <None Include="wwwroot\Images\Powerwolf.jpg" />
+    <None Include="wwwroot\Images\Sabaton.jpg" />
+    <None Include="wwwroot\Images\SIAMES.jpg" />
+    <None Include="wwwroot\Images\Skillet.jpg" />
+    <None Include="wwwroot\Images\SkipTheUse.jpg" />
+    <None Include="wwwroot\Images\Slipknot.jpg" />
+    <None Include="wwwroot\Images\StuckInTheSound.jpg" />
+    <None Include="wwwroot\Images\TheLivingTombstone.jpg" />
+    <None Include="wwwroot\Images\TheScore.jpg" />
+    <None Include="wwwroot\Images\TheStupendium.jpg" />
+    <None Include="wwwroot\Images\Tommy.jpg" />
+    <None Include="wwwroot\Images\TwentyOnePilots.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
