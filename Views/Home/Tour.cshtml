@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Tour Page";
+}
+    <h1>@ViewData["Title"]</h1>
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+    <!-- Images -->
+    <div class="slideshow-container">
+
+        <div class="myImages fade">
+            <img src="img_la.jpg" style="width:100%">
+            <div class="text">The first concert that the band played at.</div>
+        </div>
+
+        <div class="myImages fade">
+            <img src="img_ny.jpg" style="width:100%">
+            <div class="text">The first venue that the band ever played at.</div>
+        </div>
+
+        <div class="myImages fade">
+            <img src="img_wash.jpg" style="width:100%">
+            <div class="text">Band playing in Washington D.C for the first time ever.</div>
+        </div>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <section class="w3-content" style="max-width:600px" style="text-align:center">
+        <p class="justify">
+            The band will be playing in Washington, New York and Los Angeles. If you would like tickets, please stand-by as they will become available at a later date.
+        </p>
+    </section>
+
+    <!-- Content will go here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</body>
+</html>
+

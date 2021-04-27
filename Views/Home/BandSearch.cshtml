@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Band Search";
+}
+
+    <section class="noflex">
+        <form asp-action="BandSearch" method="get">
+            <h1>Search</h1>
+            <div>
+                <label for="SearchString">Search by Band: </label> <input type="text" name="SearchString" id="SearchString" />
+                <input type="submit" value="Search" />
+            </div>
+            <div>
+                <label for="GenreSearch">Search by Genre: </label> <input type="text" name="GenreSearch" id="GenreSearch" />
+                <input type="submit" value="Search" />
+            </div>
+        </form>
+
+            
+
+
+        <div>
+
+            @if (ViewData["SearchString"] != null && (string)ViewData["SearchString"] != String.Empty)
+             {
+                @foreach (var item in Model)
+
+                 {
+                    <div><img src="~/Images/@item.BandImage" height="400" width="400" /></div>
+                    <p>@item.BandName - @item.BandGenre</p>
+                    <p><a asp-controller="Home" asp-action="BandDetails" asp-route-id="@item.BandID">Details</a></p>
+                 }
+                if (Model.Count == 0)
+                {
+                    <p>Sorry no matches.</p>
+                }
+             }
+        </div>
+        <div>
+
+            @if (ViewData["GenreSearch"] != null && (string)ViewData["GenreSearch"] != String.Empty)
+             {
+                @foreach (var item in Model)
+
+                 {
+                    <div><img src="~/Images/@item.BandImage" height="400" width="400" /></div>
+                    <p>@item.BandName - @item.BandGenre</p>
+
+                    <p><a asp-controller="Home" asp-action="BandDetails" asp-route-id="@item.BandID">Details</a></p>
+                 }
+                if (Model.Count == 0)
+                {
+                    <p>Sorry no matches.</p>
+                }
+             }
+        </div>
+
+    </section>
+
+
+

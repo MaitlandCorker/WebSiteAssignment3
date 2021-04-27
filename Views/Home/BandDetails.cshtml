@@ -1,0 +1,19 @@
+﻿@model WebSiteAssignment2.Models.Band
+@{
+    ViewData["Title"] = @Model.BandName;
+    ViewData["PageHeading"] = Model.BandName;
+}
+<section>
+    <div class="mainImage">
+    <img src="~/Images/@Model.BandImage" alt="@Model.BandName" height="300" width="500" />
+    
+    </div>
+
+    <div class="bandInfo">
+        <h2>@Model.BandName</h2>
+        <p>@Model.BandDescription</p>
+        <p>Genre: @Model.BandGenre</p>
+        <p>Price: £@((Model.TicketPrice).ToString("0.00"))</p>
+        <p>Purchase Ticket</p>
+    </div>
+</section>
